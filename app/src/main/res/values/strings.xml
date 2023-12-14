@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dados2023</string>
+    <string name="textButtonPlay">Jugar una partida</string>
+    <string name="textLabel_J1">Jugador 1</string>
+    <string name="textLabel_J2">Jugador 2</string>
+    <string name="textLabel_Resultado">El Resultado es...</string>
+</resources>

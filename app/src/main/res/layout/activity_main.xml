@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.MainActivity">
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        android:text="@string/textLabel_Resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvResultadoFinal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttnRepetir" />
+
+    <TextView
+        android:id="@+id/tvResultadoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvResultado"
+        app:layout_constraintTop_toBottomOf="@+id/bttnRepetir" />
+
+    <TextView
+        android:id="@+id/tvJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/textLabel_J1"
+        app:layout_constraintBottom_toTopOf="@id/tvDado1J1"
+        app:layout_constraintEnd_toStartOf="@+id/tvJ2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvDado2J1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="5"
+        android:scaleY="5"
+        app:layout_constraintBottom_toTopOf="@id/bttnRepetir"
+        app:layout_constraintEnd_toStartOf="@id/tvDado2J2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDado1J1" />
+
+    <TextView
+        android:id="@+id/tvDado1J1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="5"
+        android:scaleY="5"
+        app:layout_constraintBottom_toTopOf="@id/tvDado2J1"
+        app:layout_constraintEnd_toStartOf="@id/tvDado1J2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJ1" />
+
+    <TextView
+        android:id="@+id/tvJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/textLabel_J2"
+        app:layout_constraintBottom_toTopOf="@id/tvDado1J2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvJ1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDado2J2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="5"
+        android:scaleY="5"
+        app:layout_constraintBottom_toTopOf="@id/bttnRepetir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvDado2J1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDado1J2" />
+
+    <TextView
+        android:id="@+id/tvDado1J2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="5"
+        android:scaleY="5"
+        app:layout_constraintBottom_toTopOf="@+id/tvDado2J2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvDado1J1"
+        app:layout_constraintTop_toBottomOf="@id/tvJ2" />
+
+    <Button
+        android:id="@+id/bttnRepetir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playGame"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/textButtonPlay"
+        app:layout_constraintBottom_toTopOf="@id/tvResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDado2J2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
